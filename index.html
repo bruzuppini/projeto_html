@@ -82,41 +82,6 @@
         <!-- Seção Sobre -->
         <section id="about" class="section-container about-container">
 
-            <figure class="about-image">
-                <img src="./assets/img/eu2.JPG" alt="Foto do perfil">
-            </figure>
-
-            <article class="about-content">
-                <h2>Sobre mim</h2>
-                <p>
-                    Sou uma desenvolvedora Full Stack apaixonada por criar experiências digitais incríveis. 
-                    Com habilidades em HTML, CSS, JavaScript, Node.js, Nest e diversas tecnologias de desenvolvimento, 
-                    estou sempre em busca de novos desafios para aprimorar minhas habilidades e contribuir para projetos inovadores.
-                </p>
-                <p>
-                    Minha jornada na programação começou há pouco tempo, e tenho me dedicado a aprender e crescer como desenvolvedora. 
-                    Adoro trabalhar em equipe, compartilhar conhecimentos e encontrar soluções criativas para problemas complexos.
-                </p>
-
-                <div class="about-buttons-data">
-                    <div class="buttons-container">
-                    <a href="https://github.com/bruzuppini" target="_blank" class="botao">GitHub</a>
-                    <a href="https://drive.google.com/file/d/1hIMha4d0JOuW6NHmgeVinAsaWtSIy2Q8/view?usp=drive_link" target="_blank" class="botao-outline">Currículo</a>
-                </div>
-
-                <div class="data-container">
-                    <div class="data-item">
-                        <span class="data-number">100</span>
-                        <span class="data-label">Seguidores</span>
-                    </div>
-                    <div class="data-item">
-                        <span class="data-number">10</span>
-                        <span class="data-label">Repositórios</span>
-                    </div>
-                </div>
-                </div>
-            </article>
-
         </section>
 
         <!-- Seção Projetos -->
@@ -126,30 +91,7 @@
             <!-- Swiper Container -->
              <div class="swiper projects-swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-
-                        <article class="project-card">
-                           <figure class="project-image">
-                            <img src="./assets/icons/languages/github.svg"
-                                alt="Ícone GitHub">
-                        </figure>
-
-                        <div class="project-content">
-                            <h3>Projeto GitHub</h3>
-                            <p>Projeto desenvolvido no GitHub.</p>
-
-                            <div class="project-tags">
-                                <span class="tag">GitHub</span>
-                            </div>
-
-                            <div class="project-buttons">
-                                <a href="https://github.com/bruzuppini" target="_blank" class="botao botao-sm">GitHub</a>
-                                <a href="#" target="_blank" class="botao-outline botao-sm">Deploy</a>
-                            </div>
-                        </div>                
-
-                        </article>
-                    </div>
+             
              </div>
 
              <!-- Botões de navegação -->
@@ -185,7 +127,10 @@
              </article>
 
              <!-- Formulário de contato -->
-              <form id="formulario">
+              <form id="formulario" action="https://formsubmit.co/3c88d9878c463a457eff1fa2203b68bf" method="POST">
+
+                <input type="hidden" name="_next" value="http://localhost:5500/success.html">
+                <input type="hidden" name="_captcha" value="false">
 
                 <label for="nome">Nome:</label>
                 <input id="nome" name="nome" type="text" placeholder="Digite o seu nome completo">
@@ -214,5 +159,12 @@
         Desenvolvido por Bruna Zuppini | 2026
 
     </footer>
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Script JavaScript-->
+    <script src="assets/js/script.js" defer></script>
+
 </body>
 </html>

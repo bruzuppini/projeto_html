@@ -747,15 +747,19 @@ footer {
         align-items: flex-start;
     }
 
+    .swiper {
+        width: 100%;
+        overflow: hidden;
+    }
+
     .swiper-wrapper {
-        align-items: stretch;
+        display: flex;
     }
 
     .swiper-slide {
+        width: 300px;
         display: flex;
         justify-content: center;
-        align-items: stretch;
-        height: auto;
     }
 
     .swiper-button-next,
