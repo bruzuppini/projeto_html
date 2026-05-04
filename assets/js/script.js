@@ -269,7 +269,7 @@ formulario.addEventListener('submit', function(event){
 
     if (isValid){
         const submitButton = formulario.querySelector('button[type="submit"]');
-        submitButton.disable = true;
+        submitButton.disabled = true;
         submitButton.textContent = "Enviando...";
 
         formulario.submit();
